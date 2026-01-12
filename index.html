@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Career Guidance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>AI Career Guidance for Students</h1>
+    <p id="typing"></p>
+    <button onclick="scrollToTest()">Start Career Test</button>
+  </div>
+</section>
+
+<!-- STUDENT ASSESSMENT -->
+<section class="module" id="test">
+  <img src="images/student.png" alt="Student">
+
+  <div class="box">
+    <h2>Student Assessment</h2>
+
+    <label>Class</label>
+    <select id="cls">
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+    </select>
+
+    <label>Favourite Subject</label>
+    <select id="subject">
+      <option>Mathematics</option>
+      <option>Computer Science</option>
+      <option>Biology</option>
+      <option>Arts</option>
+    </select>
+
+    <label>Interest</label>
+    <select id="interest">
+      <option>Problem Solving</option>
+      <option>Creativity</option>
+      <option>Business</option>
+      <option>Helping People</option>
+    </select>
+
+    <label>Thinking Style</label>
+    <select id="thinking">
+      <option>Logical</option>
+      <option>Creative</option>
+      <option>Analytical</option>
+      <option>Communicative</option>
+    </select>
+
+    <button onclick="analyze()">Analyze Career</button>
+  </div>
+</section>
+
+<!-- AI EXPLANATION -->
+<section class="module reverse">
+  <img src="images/ai.png" alt="AI">
+  <div class="box">
+    <h2>How Our AI Works</h2>
+    <p>
+      We analyze your subjects, interests, and thinking style to understand
+      which career domains suit you best. The result is logical, not random.
+    </p>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results">
+  <h2>Which Career Suits You?</h2>
+  <div id="cards"></div>
+</section>
+
+<!-- ROADMAP -->
+<section class="module">
+  <img src="images/roadmap.png" alt="Roadmap">
+  <div class="box">
+    <h2>Suggested Career Roadmap</h2>
+    <div id="roadmap"></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 AI Career Guidance</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
